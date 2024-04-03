@@ -52,5 +52,13 @@ body {
   border: none;
   font-size: 1rem;
 }
+.landing-section img {
+  width: clamp(18rem, 5vw, 35rem);
+  max-width: 35rem;
+  position: absolute;
+  left: 50%;
+  bottom: max(-20rem, -90%);
+  transform: translateX(-50%);
+}
 
 /*# sourceMappingURL=main.css.map */

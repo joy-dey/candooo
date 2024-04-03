@@ -57,4 +57,14 @@ body {
         font-size: 1rem;
     }
   }
+
+  img {
+    
+    width: clamp(18rem, 5vw, 35rem);
+    max-width: 35rem;
+    position: absolute;
+    left: 50%;
+    bottom: max(-20rem, -90%);
+    transform: translateX(-50%);
+  }
 }
