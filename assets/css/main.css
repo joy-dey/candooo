@@ -1,10 +1,13 @@
 :root {
   --primary-green: #016939;
+  --primary-black: #1A161F;
+  --primary-font: "Poppins", sans-serif;
 }
 body {
   padding: clamp(.5rem, 2vw, 2rem);
   font-family: "Poppins", sans-serif;
   margin: 0;
+  line-height: 1.2;
 }
 
 /* header */
@@ -41,6 +44,7 @@ body {
   }
 }
 
+/* landing section */
 .landing-section {
   background-color: var(--primary-green);
   height: calc(100vh - clamp(2rem, 2vw, 3rem));
@@ -66,24 +70,32 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 55rem;
+    max-width: 60rem;
     margin: 0 auto;
     padding: 0 clamp(2rem, 4vw, 5rem);
 
-    h1 {
-      font-size: clamp(2rem, 4.5vw, 4.5rem);
+    .landing-title {
+      font-size: clamp(2.25rem, 4.5vw, 4.5rem);
       font-weight: 600;
       line-height: 1.2;
       margin-bottom: 0;
-    }
-
-    p {
-      max-width: 80%;
-    }
-
-    h1,p {
-      text-align: center;
       color: #ffffff;
+
+      .highlight {
+        color: #eeeeee70;
+      }
+
+    }
+
+    .landing-description {
+      max-width: 80%;
+      font-size: clamp(1rem, 1.5vw, 1.5rem);
+      color: rgba(255, 255, 255, 0.65);
+
+    }
+
+    .landing-title,.landing-description {
+      text-align: center;
     }
 
     button {
@@ -91,19 +103,50 @@ body {
       border-radius: 2rem;
       border: none;
       font-size: 1rem;
+      font-family: var(--primary-font);
     }
   }
 
 }
-/* 
-.landing-section .content-area 
-.landing-section img {
-  width: clamp(18rem, 5vw, 35rem);
-  max-width: 35rem;
-  position: absolute;
-  left: 50%;
-  bottom: max(-20rem, -90%);
-  transform: translateX(-50%);
-} */
+
+/* success story section */
+.success-story-section {
+  padding: 2rem;
+  .success-story {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .stories {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      max-width: 35ch;
+      .highlight {
+        font-size: clamp(1.25rem, 6vw, 3.5rem);
+        font-weight: 600;
+        color: var(--primary-green);
+      }
+
+      .highlight > p,  .story-text {
+        margin: 0;
+      }
+
+      .story-text {
+        margin: 0;
+        color: var(--primary-black);
+        font-size: clamp(.975rem, 1.5vw, 1.25rem);
+      }
+
+      .highlight + .story-text {
+        width: 50%;
+      }
+    }
+  }
+}
+
+/*  */
 
 /*# sourceMappingURL=main.css.map */
