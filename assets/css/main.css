@@ -1,5 +1,6 @@
 :root {
   --primary-green: #016939;
+  --primary-green-light: #1c784e;
   --primary-black: #1A161F;
   --primary-font: "Poppins", sans-serif;
 }
@@ -18,7 +19,7 @@ img {
 /* header */
 .web-header {
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--primary-green-light);
   z-index: 10;
   top: clamp(1.125rem, 2.5vw, 4rem);
   left: 50%;
@@ -27,6 +28,7 @@ img {
   backdrop-filter: blur(5px);
   max-width: max-content;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  mix-blend-mode: luminosity;
 
   .navigation {
     .navigation-items-container {
