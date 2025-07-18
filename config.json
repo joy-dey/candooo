@@ -1,5 +1,5 @@
 {
-  "buttonBackground": "#799006",
+  "buttonBackground": "linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%)",
   "agent": "Aakash",
   "allowNotifications": true,
   "maxReconnectAttempts": 10
