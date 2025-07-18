@@ -1,0 +1,6 @@
+{
+  "buttonBackground": "#799006",
+  "agent": "Aakash",
+  "allowNotifications": true,
+  "maxReconnectAttempts": 10
+}
